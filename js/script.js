@@ -3,7 +3,7 @@ const loader = document.querySelector(".loader-container");
 const loaderCon = document.querySelector(".loader-container");
 
 async function getApi() {
-  const response = await fetch(
+  const response = await ftch(
     "https://wft-geo-db.p.rapidapi.com/v1/geo/cities",
     {
       method: "GET",
@@ -24,7 +24,7 @@ async function getApi() {
     console.log(data[i].country);
     console.log(data[i].region);
 
-    container.innerHTML += `<a href="details.html?id=${data[i].id}"><div class="city-item"><h3>${data[i].city}</h3></div></a>`;
+    container.innerHTML += `<a class="backMain" href="details.html?id=${data[i].id}"><div class="city-item"><h3>${data[i].city}</h3></div></a>`;
   }
 
   console.log(data);

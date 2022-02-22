@@ -25,11 +25,13 @@ a {
   color: white;
   margin: 50px;
   text-align: center;
+  
 }
 .loader-container img {
   width: 75px;
   height: auto;
 }
+
 
 @keyframes spin {
   0% {
@@ -70,3 +72,17 @@ a {
 
 .city-item:hover {
     transform: scale(1.2);
+}
+
+.city-details{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  
+  
+
+}
+
+.backMain{
+  text-align: ;
+}

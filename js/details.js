@@ -4,10 +4,8 @@ const loader = document.querySelector(".loader-container");
 
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
-
 const id = params.get("id");
-console.log(params);
-console.log(id);
+
 
 async function getApi() {
   const url = "https://wft-geo-db.p.rapidapi.com/v1/geo/cities/" + id;
@@ -25,14 +23,13 @@ async function getApi() {
   console.log(data.id);
   loader.innerHTML = "";
   city.innerHTML = `
-  <div>
-    <h1>${data.city}</h1>
-    <h3>Country: ${data.country}</h3>
-    <h3>Region: ${data.region}</h3>
     
-
-    
-  </div>`;
+    <h1>City Name: ${data.city}</h1>
+    <h4>Country: ${data.country}</h4>
+    <h4>Region: ${data.region}</h4>
+    <h4>Elevation Meters: ${data.elevationMeters}</h4>
+    <h4>Latitude: ${data.latitude}</h4>
+    <h4>Longitude: ${data.longitude}</h4>`;
 }
 
 getApi();
