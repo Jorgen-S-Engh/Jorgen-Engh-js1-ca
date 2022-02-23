@@ -1,10 +1,28 @@
 const form = document.querySelector("#contactForm")
+const name = document.querySelector("#name")
 
-form.onsubmit = function (){
+
+
+function validateForm(){
     event.preventDefault();
 
     console.log(event)
 
-    const name = document.querySelector("#name");
+    if (name.value.length > 0){
+        nameError.style.display = "none"
+    }else{
+        nameError.style.display = "block"
+    }
+
+    ;
     console.log(name.value);
 }
+
+form.addEventListener("submit", validateForm)
+
+
+// function validateEmail(email) {
+//     const regEx = /\S+@\S+\.\S+/;
+//     const patternMatches = regEx.test(email);
+//     return patternMatches;
+// }
