@@ -9,21 +9,37 @@
   </head>
   <body>
     <div class="container-form">
+      <div class="success-message">
+        <p>Great Success!</p>
+        <p>Your message has been received</p>
+      </div>
       <form id="contactForm">
         <h1>Contact us</h1>
-        <input name="name" id="name" placeholder="Name" />
+        <input name="name" id="name" placeholder="Name (Required)" />
         <div class="form-error" id="nameError">
           ERROR! Please enter your first name
         </div>
-        <input name="text" id="subject" placeholder="Subject" />
+        <input
+          name="text"
+          id="subject"
+          placeholder="Subject (Minimun 10 characters)"
+        />
         <div class="form-error" id="subError">
           ERROR! Please enter A subject
         </div>
-        <input name="email" id="email" placeholder="Email" />
+        <input
+          name="email"
+          id="email"
+          placeholder="Email (Enter a valid email address)"
+        />
         <div class="form-error" id="emailError">
           ERROR! Please enter A subject
         </div>
-        <input name="address" id="address" placeholder="Address" />
+        <input
+          name="address"
+          id="address"
+          placeholder="Address (Minimun 25 characters)"
+        />
         <div class="form-error" id="adError">
           ERROR! Please enter your address
         </div>

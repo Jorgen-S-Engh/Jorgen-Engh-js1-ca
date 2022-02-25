@@ -1,7 +1,6 @@
 * {
-  font-family:
+  font-family: ;
 }
-
 
 h2,
 h3 {
@@ -27,13 +26,11 @@ a {
   color: white;
   margin: 50px;
   text-align: center;
-  
 }
 .loader-container img {
   width: 75px;
   height: auto;
 }
-
 
 @keyframes spin {
   0% {
@@ -47,13 +44,12 @@ a {
 .container {
   display: flex;
   justify-content: center;
-
 }
 
 .city-item {
   width: 200px;
   margin: 25px;
-  margin-top:50px;
+  margin-top: 50px;
   text-align: center;
   line-height: 100px;
 
@@ -67,70 +63,83 @@ a {
   box-shadow: 10px 10px 8px #888888;
 }
 
-
-
 .city-item h3 {
   color: white;
 }
 
 .city-item:hover {
   transform: scale(1.2);
-  background: rgb(131,58,180);
-  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
-
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
 }
 
-.city-details{
-  display:flex;
+.city-details {
+  display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.contact-us{
+.contact-us {
   /* padding:25px; */
   background-color: gray;
-  width:100px;
+  width: 100px;
   text-align: center;
-  color:white;
+  color: white;
 }
 
-.menu{
-  display:flex;
+.menu {
+  display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.menu h1{
-  margin:25px;
-  background-image: -webkit-gradient(linear,0% 0%,25% 100%,from(rgb(61, 58, 58)),to(rgb(30, 147, 226)));
+.menu h1 {
+  margin: 25px;
+  background-image: -webkit-gradient(
+    linear,
+    0% 0%,
+    25% 100%,
+    from(rgb(61, 58, 58)),
+    to(rgb(30, 147, 226))
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.container-form{
-  width:300px;
-  height:300px;
-  margin:0 auto;
+.container-form {
+  width: 600px;
+  height: 300px;
+  margin: 0 auto;
   text-align: center;
-  
 }
 
-#contactForm{
-  display:flex;
+#contactForm {
+  display: flex;
   flex-direction: column;
   align-items: center;
-  background: rgb(131,58,180);
-  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  
   border-radius: 10px;
-  margin:25px;
+  margin: 25px;
 }
 
-#contactForm h1{
-  color:white;
+#contactForm h1 {
+  color: white;
 }
 
-#contactForm input{
-  margin:10px;
+#contactForm input {
+  margin: 10px;
 }
 
 .form-error {
@@ -138,10 +147,23 @@ a {
   color: white;
   font-size: 0.9rem;
   margin-top: 2px;
+  font-weight: bold;
+
 }
 
+input {
+  width: 400px;
+}
 
+.success-message {
+  background-color: lightgreen;
+  margin: 0 auto;
+  border: solid 2px green;
+  white;
+  display: none;
+}
 
-
-
-
+button{
+  margin:20px;
+  
+}
