@@ -24,7 +24,12 @@ async function getApi() {
     console.log(data[i].country);
     console.log(data[i].region);
 
-    container.innerHTML += `<a href="details.html?id=${data[i].id}"><div class="city-item"><h3>${data[i].city}</h3></div></a>`;
+    container.innerHTML += `
+    <a href="details.html?id=${data[i].id}">
+      <div class="city-item">
+        <h3>${data[i].city}</h3>
+      </div>
+    </a>`;
   }
 
   console.log(data);
