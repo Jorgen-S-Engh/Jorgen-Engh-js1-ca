@@ -2,6 +2,12 @@
   font-family: ;
 }
 
+body{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 h2,
 h3 {
   color: black;
@@ -11,7 +17,7 @@ a {
   text-decoration: none;
 }
 
-/* 
+
 .loader-container {
   display: flex;
   justify-content: center;
@@ -19,7 +25,7 @@ a {
   width: 100%;
   height: 300px;
   flex-direction: column;
-} */
+}
 
 .loader-icon {
   animation: spin 4s linear infinite;
@@ -52,7 +58,6 @@ a {
   margin-top: 50px;
   text-align: center;
   line-height: 100px;
-
   background: rgb(2, 0, 36);
   background: linear-gradient(
     90deg,
@@ -86,10 +91,19 @@ a {
 
 .contact-us {
   /* padding:25px; */
-  background-color: gray;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
   width: 100px;
+  height:50px;
   text-align: center;
   color: white;
+  border-radius:5px;
+  line-height:50px;
 }
 
 .menu {
@@ -166,4 +180,32 @@ input {
 button{
   margin:20px;
   
+}
+
+
+.api-error-div{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.api-error-div img{
+  width:300px;
+
+}
+
+.city-container{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  padding:20px;
+  margin:20px;
+  border-radius: 1rem;
+  color:white;
 }
